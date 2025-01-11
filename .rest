@@ -1,1 +1,5 @@
 GET  http://localhost:3000/users HTTP/1.1
+
+
+###
+GET  http://localhost:3000/users/678076a32c63c00775975d16 HTTP/1.1
