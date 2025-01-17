@@ -1,5 +1,31 @@
 GET  http://localhost:3000/users HTTP/1.1
 
 
-###
-GET  http://localhost:3000/users/678076a32c63c00775975d16 HTTP/1.1
+### Get Contact by id
+GET  http://localhost:3000/users/6781d21ff0e68b59ebb8b7e9 HTTP/1.1
+
+### Create Contact
+POST  http://localhost:3000/users HTTP/1.1
+Content-Type: application/json 
+
+{
+  "email": "test@gmail.com",
+  "favoriteColor": "black",
+  "firstName": "Test",
+  "lastName": "ting"
+}
+
+### Put Contact (Update)
+PUT http://localhost:3000/users/678aa94e0e0074a53a78e6a4 HTTP/1.1
+Content-Type: application/json 
+
+{
+  "email": "test25@gmail.com",
+  "favoriteColor": "black",
+  "firstName": "Test25",
+  "lastName": "ting"
+}
+
+
+### Delete Contact
+DELETE  http://localhost:3000/users/678aa94e0e0074a53a78e6a4 HTTP/1.1

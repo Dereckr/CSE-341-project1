@@ -4,13 +4,17 @@
   "description": "My first Project",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongodb": "^6.12.0"
+    "mongodb": "^6.12.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
   }
 }
