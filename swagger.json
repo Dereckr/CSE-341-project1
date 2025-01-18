@@ -62,6 +62,9 @@
                 },
                 "lastName": {
                   "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
                 }
               }
             }
@@ -128,6 +131,9 @@
                   "example": "any"
                 },
                 "lastName": {
+                  "example": "any"
+                },
+                "birthday": {
                   "example": "any"
                 }
               }
