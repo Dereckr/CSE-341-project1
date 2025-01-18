@@ -31,7 +31,7 @@ const createUser = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     firstName: req.body.firstName,
     lastName: req.body.lastName,
-    birthdat: req.body.birthday,
+    birthday: req.body.birthday,
   };
   const response = await mongodb
     .getDb()
@@ -55,7 +55,7 @@ const updateUser = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     firstName: req.body.firstName,
     lastName: req.body.lastName,
-    birthdat: req.body.birthday,
+    birthday: req.body.birthday,
   };
   const response = await mongodb
     .getDb()
