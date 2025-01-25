@@ -12,6 +12,9 @@ const getAll = async (req, res) => {
 
 const getSingle = async (req, res) => {
   //#swagger.tags=['Users']
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to find a contact');
+  }
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
@@ -49,6 +52,9 @@ const createUser = async (req, res) => {
 
 const updateUser = async (req, res) => {
   //#swagger.tags=['Users']
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to update a contact');
+  }
   const userId = new ObjectId(req.params.id);
   const user = {
     email: req.body.email,
@@ -73,6 +79,9 @@ const updateUser = async (req, res) => {
 
 const deleteUser = async (req, res) => {
   //#swagger.tags=['Users']
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to delete a contact');
+  }
   const userId = new ObjectId(req.params.id);
   const response = await mongodb
     .getDb()
